@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:soul_steel_block"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:soul_steel",
+    "count": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "yeehaw:enchanted_dust"
+    },
+    {
+      "item": "yeehaw:enchanted_dust"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:arcane_emulsifier",
+    "count": 1
+  }
+}

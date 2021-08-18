@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BXB",
+    "TPC",
+    " B "
+  ],
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:bread"
+    },
+    "T":
+    {
+      "item": "yeehaw:tomato"
+    },
+    "P":
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "C":
+    {
+      "item": "yeehaw:cheese"
+    },
+    "X":
+    {
+      "item": "yeehaw:arcane_emulsifier"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:sandvich",
+    "count": 2
+  }
+}

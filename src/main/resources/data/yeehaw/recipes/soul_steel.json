@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:essence_of_man"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:quartz"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:soul_steel",
+    "count": 1
+  }
+}

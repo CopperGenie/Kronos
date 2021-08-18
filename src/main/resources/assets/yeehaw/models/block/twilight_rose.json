@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "yeehaw:blocks/twilight_rose"
+  }
+}

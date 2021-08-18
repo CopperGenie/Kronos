@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "yeehaw:block/sword_in_the_stone" },
+    "facing=south": { "model": "yeehaw:block/sword_in_the_stone", "y":  180},
+    "facing=west": { "model": "yeehaw:block/sword_in_the_stone", "y":  270},
+    "facing=east": { "model": "yeehaw:block/sword_in_the_stone", "y":  90}
+  }
+}

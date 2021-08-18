@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:shield"
+    },
+    "B":
+    {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:aegis",
+    "count": 1
+  }
+}

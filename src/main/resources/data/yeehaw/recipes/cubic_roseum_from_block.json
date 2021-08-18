@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:cube_of_roseum"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:cubic_roseum",
+    "count": 9
+  }
+}

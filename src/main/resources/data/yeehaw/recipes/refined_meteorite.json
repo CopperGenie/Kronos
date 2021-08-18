@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "yeehaw:meteorite"
+  },
+  "result": "yeehaw:refined_meteorite",
+  "experience": 1.0,
+  "cookingtime": 160
+}

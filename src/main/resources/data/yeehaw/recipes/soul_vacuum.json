@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xrx",
+    "ryr",
+    "xrx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "yeehaw:soul_steel"
+    },
+    "r":
+    {
+      "item": "minecraft:redstone_block"
+    },
+    "y":
+    {
+      "item": "yeehaw:giant_soul"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:soul_vacuum",
+    "count": 1
+  }
+}

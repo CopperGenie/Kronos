@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:titanite_block"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:titanite",
+    "count": 9
+  }
+}

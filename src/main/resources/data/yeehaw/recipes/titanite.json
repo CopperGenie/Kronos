@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "yeehaw:titanite_ore"
+  },
+  "result": "yeehaw:titanite",
+  "experience": 1.0,
+  "cookingtime": 160
+}

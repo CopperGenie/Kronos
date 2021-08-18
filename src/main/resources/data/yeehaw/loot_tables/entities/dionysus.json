@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:etherium",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":4}}]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:dionysus_soul",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:forbidden_fruit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":20,"max":25}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:titanite",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":2,"max":3}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":1,"max":2}}]
+        }
+      ]
+    }
+  ]
+}

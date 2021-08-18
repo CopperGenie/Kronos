@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "yeehaw:blocks/ff_stage_2"
+  }
+}

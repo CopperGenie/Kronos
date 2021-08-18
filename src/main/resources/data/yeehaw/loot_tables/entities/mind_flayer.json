@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 2,
+          "functions":[{"function":"set_count","count":{"min":8,"max":16}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:soul",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:flayer_robe_top",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:flayer_robe_bottom",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

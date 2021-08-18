@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:blank_scroll"
+    },
+    {
+      "item": "yeehaw:mechanical_assembler"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "yeehaw:enchanted_dust"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:scroll_of_the_plains",
+    "count": 1
+  }
+}

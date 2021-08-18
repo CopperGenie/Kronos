@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "COC",
+    "COC",
+    "RDR"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:charcoal"
+    },
+    "O":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "R":
+    {
+      "item": "yeehaw:cubic_roseum"
+    },
+    "D":
+    {
+      "item": "minecraft:diamond_sword"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:the_harvester",
+    "count": 1
+  }
+}

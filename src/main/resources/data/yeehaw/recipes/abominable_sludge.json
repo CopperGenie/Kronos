@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "WLM",
+    "ESE",
+    "BFB"
+  ],
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    "B":
+    {
+      "item": "minecraft:bone_block"
+    },
+    "W":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "L":
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    "M":
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    "E":
+    {
+      "item": "yeehaw:arcane_emulsifier"
+    },
+    "S":
+    {
+      "item": "yeehaw:giant_soul"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:abominable_sludge",
+    "count": 1
+  }
+}

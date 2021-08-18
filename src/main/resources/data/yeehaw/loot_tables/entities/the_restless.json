@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:tattered_soul",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:sacred_texts",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

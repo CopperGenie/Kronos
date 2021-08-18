@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ttn",
+    "ttn",
+    "in "
+  ],
+  "key":
+  {
+    "t":
+    {
+      "item": "yeehaw:titan_ingot"
+    },
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "n":
+    {
+      "item": "yeehaw:titanite"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:buster_blade",
+    "count": 1
+  }
+}

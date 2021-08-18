@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:dragon_egg"
+  },
+  "result":
+  {
+    "item": "yeehaw:etherium",
+    "count": 5
+  },
+  "experience": 50.0,
+  "cookingtime": 640
+}

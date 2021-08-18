@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:blank_scroll"
+    },
+    {
+      "item": "yeehaw:mechanical_assembler"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:scroll_of_ascension",
+    "count": 1
+  }
+}

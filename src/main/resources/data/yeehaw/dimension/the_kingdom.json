@@ -1,0 +1,162 @@
+{
+  "type": "yeehaw:standard",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "seed": 5,
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "biomes": [
+        {
+          "biome": "yeehaw:sea",
+          "parameters": {
+            "altitude":     0.10,
+            "temperature":  0.45,
+            "humidity":     1.00,
+            "weirdness":    0.00,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_lowlands",
+          "parameters": {
+            "altitude":     0.15,
+            "temperature":  0.40,
+            "humidity":     0.45,
+            "weirdness":    0.05,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_grassland",
+          "parameters": {
+            "altitude":     0.15,
+            "temperature":  0.55,
+            "humidity":     0.50,
+            "weirdness":    0.00,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_orc_country",
+          "parameters": {
+            "altitude":     0.15,
+            "temperature":  0.55,
+            "humidity":     0.50,
+            "weirdness":    0.30,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_mushroom_forest",
+          "parameters": {
+            "altitude":     0.20,
+            "temperature":  0.40,
+            "humidity":     0.50,
+            "weirdness":    0.50,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_golden_forest",
+          "parameters": {
+            "altitude":     0.20,
+            "temperature":  0.45,
+            "humidity":     0.40,
+            "weirdness":    0.05,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_golden_birch_forest",
+          "parameters": {
+            "altitude":     0.20,
+            "temperature":  0.50,
+            "humidity":     0.40,
+            "weirdness":    0.10,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_taiga",
+          "parameters": {
+            "altitude":     0.35,
+            "temperature":  0.35,
+            "humidity":     0.35,
+            "weirdness":    0.05,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_taiga_colored",
+          "parameters": {
+            "altitude":     0.35,
+            "temperature":  0.35,
+            "humidity":     0.35,
+            "weirdness":    0.10,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_redwood_taiga",
+          "parameters": {
+            "altitude":     0.40,
+            "temperature":  0.30,
+            "humidity":     0.35,
+            "weirdness":    0.10,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_golden_forest_hills",
+          "parameters": {
+            "altitude":     0.55,
+            "temperature":  0.35,
+            "humidity":     0.35,
+            "weirdness":    0.05,
+            "offset":       0
+          }
+        },
+        {
+          "biome": "yeehaw:tk_taiga_mountains",
+          "parameters": {
+            "altitude":     0.75,
+            "temperature":  0.25,
+            "humidity":     0.30,
+            "weirdness":    0.05,
+            "offset":       0
+          }
+        }
+      ]
+    },
+    "seed": 5,
+    "settings": "yeehaw:default",
+    "type": "minecraft:noise"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CCC",
+    "DSD",
+    "CCC"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "yeehaw:cloudstone"
+    },
+    "S":
+    {
+      "item": "yeehaw:nimbus_giant_soul"
+    },
+    "D":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:sky_gem",
+    "count": 1
+  }
+}

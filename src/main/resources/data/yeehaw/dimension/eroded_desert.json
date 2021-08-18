@@ -1,0 +1,12 @@
+{
+  "type": "yeehaw:standard",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "yeehaw:eroded_desert"
+    },
+    "seed": 0,
+    "settings": "yeehaw:default",
+    "type": "minecraft:noise"
+  }
+}

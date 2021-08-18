@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "S",
+    "K",
+    "A"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:creeping_horror_soul"
+    },
+    "A":
+    {
+      "item": "yeehaw:mechanical_assembler"
+    },
+    "K":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:plague_rod",
+    "count": 1
+  }
+}

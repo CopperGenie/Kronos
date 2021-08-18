@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "yeehaw:fungal_titanite"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:fungal_titanite_block",
+    "count": 1
+  }
+}

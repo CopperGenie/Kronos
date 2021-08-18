@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:titanite"
+    },
+    {
+      "item": "yeehaw:toad_spores"
+    },
+    {
+      "item": "yeehaw:fungal_essence"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:fungal_titanite",
+    "count": 1
+  }
+}

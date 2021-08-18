@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " R ",
+    " R ",
+    " R "
+  ],
+  "key":
+  {
+    "R":
+    {
+      "item": "yeehaw:cubic_roseum"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:sunset_blade_blade",
+    "count": 1
+  }
+}

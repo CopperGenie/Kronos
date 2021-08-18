@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:blank_scroll"
+    },
+    {
+      "item": "yeehaw:mechanical_assembler"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:scroll_of_suicide",
+    "count": 1
+  }
+}

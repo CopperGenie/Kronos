@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:theosian_crystal"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:crystal_shard",
+    "count": 4
+  }
+}

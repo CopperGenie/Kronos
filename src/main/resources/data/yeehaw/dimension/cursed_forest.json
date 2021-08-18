@@ -1,0 +1,12 @@
+{
+  "type": "yeehaw:standard",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "yeehaw:cursed_forest"
+    },
+    "seed": 0,
+    "settings": "yeehaw:cursed_forest",
+    "type": "minecraft:noise"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "yeehaw:forbidden_fruit"
+    },
+    {
+      "item": "yeehaw:tattered_soul"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:primordial_spirit",
+    "count": 1
+  }
+}

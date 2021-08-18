@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ABA",
+    "BSB",
+    "ABA"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:emerald_block"
+    },
+    "B":
+    {
+      "item": "yeehaw:etherium"
+    },
+    "A":
+    {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:anticreepus",
+    "count": 1
+  }
+}

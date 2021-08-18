@@ -1,0 +1,17 @@
+{
+  "config": {
+    "top_material": {
+      "Properties": {
+        "snowy": "false"
+      },
+      "Name": "minecraft:black_stained_glass"
+    },
+    "under_material": {
+      "Name": "minecraft:black_stained_glass"
+    },
+    "underwater_material": {
+      "Name": "minecraft:black_stained_glass"
+    }
+  },
+  "type": "minecraft:default"
+}

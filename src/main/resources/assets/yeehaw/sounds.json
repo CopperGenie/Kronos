@@ -1,0 +1,376 @@
+{
+  "entity.genie.ambient": {
+    "category": "entity",
+    "subtitle": "entity.genie.ambient",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/entity.genie.ambient",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/entity.genie.ambient1",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/entity.genie.ambient2",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/entity.genie.ambient3",
+        "stream": true
+      }
+    ]
+  },
+  "entity.genie.death": {
+    "category": "entity",
+    "subtitle": "entity.genie.death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/entity.genie.death",
+        "stream": true
+      }
+    ]
+  },
+  "entity.genie.hurt": {
+    "category": "entity",
+    "subtitle": "entity.genie.hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/entity.genie.hurt",
+        "stream": true
+      }
+    ]
+  },
+  "lamp_summon": {
+    "category": "entity",
+    "subtitle": "lamp_summon",
+    "sounds": [
+      {
+        "name": "yeehaw:lamp_summon",
+        "stream": true
+      }
+    ]
+  },
+  "lich_summon": {
+    "category": "entity",
+    "subtitle": "lich_summon",
+    "sounds": [
+      {
+        "name": "yeehaw:lich_summon",
+        "stream": true
+      }
+    ]
+  },
+  "mind_flayer_summon": {
+    "category": "entity",
+    "subtitle": "mind_flayer_summon",
+    "sounds": [
+      {
+        "name": "yeehaw:mind_flayer_summon",
+        "stream": true
+      }
+    ]
+  },
+  "toad_father_summon": {
+    "category": "entity",
+    "subtitle": "toad_father_summon",
+    "sounds": [
+      {
+        "name": "yeehaw:toad_father_summon",
+        "stream": true
+      }
+    ]
+  },
+  "treasure_fairy_summon": {
+    "category": "entity",
+    "subtitle": "treasure_fairy_summon",
+    "sounds": [
+      {
+        "name": "yeehaw:treasure_fairy_summon",
+        "stream": true
+      }
+    ]
+  },
+  "entity.human.hurt": {
+    "category": "entity",
+    "subtitle": "entity.human.hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/entity.human.hurt",
+        "stream": true
+      }
+    ]
+  },
+  "entity.human.death": {
+    "category": "entity",
+    "subtitle": "entity.human.death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/entity.human.death",
+        "stream": true
+      }
+    ]
+  },
+  "fb_ambient": {
+    "category": "entity",
+    "subtitle": "fb_ambient",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/felonious_bolus/hey_you",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/felonious_bolus/i_dont_belong",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/felonious_bolus/bzz",
+        "stream": true
+      }
+    ]
+  },
+  "fb_hurt": {
+    "category": "entity",
+    "subtitle": "fb_hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/felonious_bolus/airhorn",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/felonious_bolus/i_didnt_do_it",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/felonious_bolus/what_are_you_doing",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/felonious_bolus/byoom",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/felonious_bolus/woof",
+        "stream": true
+      }
+    ]
+  },
+  "fb_death": {
+    "category": "entity",
+    "subtitle": "fb_death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/felonious_bolus/habeas_corpus",
+        "stream": true
+      }
+    ]
+  },
+  "police_buzz": {
+    "category": "entity",
+    "subtitle": "police_buzz",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/the_police/police_buzz",
+        "stream": true
+      }
+    ]
+  },
+  "the_police_death": {
+    "category": "entity",
+    "subtitle": "the_police_death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/the_police/do_you",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/the_police/woowoo",
+        "stream": true
+      }
+    ]
+  },
+  "the_police_hurt": {
+    "category": "entity",
+    "subtitle": "the_police_hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/the_police/busted_tail_light",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/the_police/are_you_under",
+        "stream": false
+      }
+    ]
+  },
+  "x0026g_ambient": {
+    "category": "entity",
+    "subtitle": "x0026g_ambient",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/x0026g/air_sound",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/x0026g/point_that_air",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/x0026g/saratoga",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/x0026g/see_if",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/x0026g/window",
+        "stream": false
+      }
+    ]
+  },
+  "x0026g_hurt": {
+    "category": "entity",
+    "subtitle": "x0026g_hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/x0026g/pretty_sure",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/x0026g/i_dont_see",
+        "stream": false
+      },
+      {
+        "name": "yeehaw:entity/x0026g/just_act_natural",
+        "stream": false
+      }
+    ]
+  },
+  "x0026g_death": {
+    "category": "entity",
+    "subtitle": "x0026g_death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/x0026g/no_flippin_way",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/x0026g/i_dont_wanna",
+        "stream": true
+      }
+    ]
+  },
+  "krork_hurt": {
+    "category": "entity",
+    "subtitle": "krork_hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/krork/krork_hurt",
+        "stream": true
+      }
+    ]
+  },
+  "krork_dialogue_1": {
+    "category": "entity",
+    "subtitle": "krork_dialogue_1",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/krork/you_dont_have",
+        "stream": true
+      }
+    ]
+  },
+  "krork_dialogue_2": {
+    "category": "entity",
+    "subtitle": "krork_dialogue_2",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/krork/too_new",
+        "stream": true
+      }
+    ]
+  },
+  "krork_dialogue_3": {
+    "category": "entity",
+    "subtitle": "krork_dialogue_3",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/krork/thats_a_problem",
+        "stream": true
+      }
+    ]
+  },
+  "krork_dialogue_4": {
+    "category": "entity",
+    "subtitle": "krork_dialogue_4",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/krork/not_so",
+        "stream": true
+      }
+    ]
+  },
+  "krork_dialogue_5": {
+    "category": "entity",
+    "subtitle": "krork_dialogue_5",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/krork/can_i_get",
+        "stream": true
+      }
+    ]
+  },
+  "gasman_hurt": {
+    "category": "entity",
+    "subtitle": "gasman_hurt",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/gasman/gasman_hurt",
+        "stream": true
+      }
+    ]
+  },
+  "gasman_death": {
+    "category": "entity",
+    "subtitle": "gasman_death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/gasman/gasman_death",
+        "stream": true
+      }
+    ]
+  },
+  "female_hurt": {
+    "category": "entity",
+    "subtitle": "female_death",
+    "sounds": [
+      {
+        "name": "yeehaw:entity/female/female_hurt_1",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/female/female_hurt_2",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/female/female_hurt_3",
+        "stream": true
+      },
+      {
+        "name": "yeehaw:entity/female/female_hurt_4",
+        "stream": true
+      }
+    ]
+  },
+  "destroy_the_child": {
+    "category": "ambient",
+    "subtitle": "destroy_the_child",
+    "sounds": [
+      {
+        "name": "yeehaw:destroy_the_child",
+        "stream": true
+      }
+    ]
+  }
+}

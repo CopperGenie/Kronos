@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:understeel_block"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:understeel",
+    "count": 9
+  }
+}

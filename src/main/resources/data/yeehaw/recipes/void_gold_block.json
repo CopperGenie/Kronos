@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:magic_gold_block"
+    },
+    "B":
+    {
+      "item": "yeehaw:raw_data"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:void_gold_block",
+    "count": 1
+  }
+}

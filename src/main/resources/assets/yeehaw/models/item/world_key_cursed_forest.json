@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "yeehaw:items/world_key_cursed_forest"
+  }
+}

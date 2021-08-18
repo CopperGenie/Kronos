@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:blank_scroll"
+    },
+    {
+      "item": "yeehaw:mechanical_assembler"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:rose_bush"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:scroll_of_smite_lesser_undead",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " e ",
+    "gog",
+    "ggg"
+  ],
+  "key":
+  {
+    "e":
+    {
+      "item": "yeehaw:essence_of_man"
+    },
+    "g":
+    {
+      "item": "yeehaw:magic_gold"
+    },
+    "o":
+    {
+      "item": "yeehaw:opal"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:magic_lamp",
+    "count": 1
+  }
+}

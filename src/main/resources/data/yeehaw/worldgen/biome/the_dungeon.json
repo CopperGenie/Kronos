@@ -1,0 +1,41 @@
+{
+  "surface_builder": "yeehaw:bedrock",
+  "depth": 0.125,
+  "scale": -0.11,
+  "temperature": 0.0,
+  "downfall": 0,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "plains",
+  "player_spawn_friendly": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 0,
+    "foliage_color": 0,
+    "particle": {}
+  },
+  "starts": [
+    "yeehaw:dungeon1"
+  ],
+  "spawners": {
+    "monster": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
+}

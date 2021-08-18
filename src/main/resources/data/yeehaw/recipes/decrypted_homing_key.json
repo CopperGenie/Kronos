@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:herobrine_chronicle"
+    },
+    "B":
+    {
+      "item": "yeehaw:raw_data"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:decrypted_homing_key",
+    "count": 1
+  }
+}

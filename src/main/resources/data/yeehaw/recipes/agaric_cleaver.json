@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "FFF",
+    "FSQ",
+    " T "
+  ],
+  "key":
+  {
+    "F":
+    {
+      "item": "yeehaw:fungal_titanite"
+    },
+    "S":
+    {
+      "item": "yeehaw:toad_father_soul"
+    },
+    "Q":
+    {
+      "item": "minecraft:quartz"
+    },
+    "T":
+    {
+      "item": "yeehaw:titanite"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:agaric_cleaver",
+    "count": 1
+  }
+}

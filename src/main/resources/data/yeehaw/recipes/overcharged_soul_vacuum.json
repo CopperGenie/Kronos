@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ESE",
+    "XGX",
+    "XDX"
+  ],
+  "key":
+  {
+    "D":
+    {
+      "item": "yeehaw:shadow_demon_soul"
+    },
+    "E":
+    {
+      "item": "yeehaw:etherium"
+    },
+    "X":
+    {
+      "item": "yeehaw:soul_steel"
+    },
+    "S":
+    {
+      "item": "yeehaw:nimbus_giant_soul"
+    },
+    "G":
+    {
+      "item": "yeehaw:soul_vacuum"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:overcharged_soul_vacuum",
+    "count": 1
+  }
+}

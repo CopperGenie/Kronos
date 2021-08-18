@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "TMT",
+    "M M"
+  ],
+  "key":
+  {
+    "T":
+    {
+      "item": "yeehaw:titanite"
+    },
+    "M":
+    {
+      "item": "yeehaw:refined_meteorite"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:meteor_helmet",
+    "count": 1
+  }
+}

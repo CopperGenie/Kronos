@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:tattered_soul"
+    },
+    {
+      "item": "yeehaw:tattered_soul"
+    },
+    {
+      "item": "yeehaw:tattered_soul"
+    },
+    {
+      "item": "yeehaw:tattered_soul"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:soul",
+    "count": 1
+  }
+}

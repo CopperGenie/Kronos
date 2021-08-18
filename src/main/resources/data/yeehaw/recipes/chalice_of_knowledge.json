@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "TST",
+    " I ",
+    "IOI"
+  ],
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "O":
+    {
+      "item": "yeehaw:opal"
+    },
+    "S":
+    {
+      "item": "yeehaw:soul"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:chalice_of_knowledge",
+    "count": 1
+  }
+}

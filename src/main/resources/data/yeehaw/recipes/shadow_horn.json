@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CEC",
+    "CGC",
+    "BBB"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:coal_block"
+    },
+    "B":
+    {
+      "item": "yeehaw:brimstone"
+    },
+    "E":
+    {
+      "item": "minecraft:emerald_block"
+    },
+    "G":
+    {
+      "item": "yeehaw:giant_soul"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:shadow_horn",
+    "count": 1
+  }
+}

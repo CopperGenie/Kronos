@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "RSR",
+    "EGE",
+    "III"
+  ],
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:end_rod"
+    },
+    "S":
+    {
+      "item": "yeehaw:giant_soul"
+    },
+    "E":
+    {
+      "item": "yeehaw:etherium"
+    },
+    "G":
+    {
+      "item": "minecraft:gold_block"
+    },
+    "I":
+    {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:interdimensional_receiver",
+    "count": 1
+  }
+}

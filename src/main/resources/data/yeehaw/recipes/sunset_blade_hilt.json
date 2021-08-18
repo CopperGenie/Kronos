@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "OOO",
+    "OOO",
+    " O "
+  ],
+  "key":
+  {
+    "O":
+    {
+      "item": "yeehaw:perfect_opal"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:sunset_blade_hilt",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:biodiesel",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:quaalude",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

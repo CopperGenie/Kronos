@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "TT",
+    "TT"
+  ],
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:torch"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:scroll_of_guiding_light",
+    "count": 1
+  }
+}

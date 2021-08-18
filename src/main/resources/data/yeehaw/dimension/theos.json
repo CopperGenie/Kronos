@@ -1,0 +1,52 @@
+{
+  "type": "yeehaw:standard",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "seed": 0,
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "biomes": [
+        {
+          "biome": "yeehaw:theos",
+          "parameters": {
+            "altitude":     0.0,
+            "temperature":  0.5,
+            "humidity":     0.0,
+            "weirdness":    0.0,
+            "offset":       0
+          }
+        }
+      ]
+    },
+    "seed": 0,
+    "settings": "yeehaw:default",
+    "type": "minecraft:noise"
+  }
+}

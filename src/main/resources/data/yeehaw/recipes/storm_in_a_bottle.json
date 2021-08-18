@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CWC",
+    "NGP",
+    " B "
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "yeehaw:cloudstone"
+    },
+    "B":
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    "N":
+    {
+      "item": "minecraft:nautilus_shell"
+    },
+    "P":
+    {
+      "item": "minecraft:phantom_membrane"
+    },
+    "W":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "G":
+    {
+      "item": "yeehaw:giant_soul"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:storm_in_a_bottle",
+    "count": 1
+  }
+}

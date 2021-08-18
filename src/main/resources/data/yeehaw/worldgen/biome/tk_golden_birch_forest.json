@@ -1,0 +1,123 @@
+{
+  "depth": 0.125,
+  "scale": 0.15,
+  "effects": {
+    "sky_color": 7907327,
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "foliage_color": 16762880
+  },
+  "surface_builder": "yeehaw:grass_sand",
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "yeehaw:disk_sand_much",
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "yeehaw:ore_opal",
+      "yeehaw:ore_titanite",
+      "yeehaw:ore_meteorite"
+    ],
+    [],
+    [
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:spring_water",
+      "yeehaw:birch_birch_oak_leaves",
+      "yeehaw:poppy_dandy_rose_lily",
+      "minecraft:patch_red_mushroom",
+      "minecraft:patch_brown_mushroom",
+      "minecraft:patch_grass_forest"
+    ],
+    []
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:skeleton",
+        "weight": 70,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 70,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:zombie",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:spider",
+        "weight": 70,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "yeehaw:gnome_elder",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "yeehaw:troll",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "yeehaw:toad_mother",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:cow",
+        "weight": 2,
+        "minCount": 2,
+        "maxCount": 3
+      },
+      {
+        "type": "yeehaw:toadkin",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 5,
+        "maxCount": 5
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "precipitation": "rain",
+  "temperature": 1.0,
+  "downfall": 1.0,
+  "category": "forest"
+}

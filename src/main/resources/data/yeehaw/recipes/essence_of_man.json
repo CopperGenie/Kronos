@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "yeehaw:soul"
+  },
+  "result": "yeehaw:essence_of_man",
+  "experience": 1.0,
+  "cookingtime": 160
+}

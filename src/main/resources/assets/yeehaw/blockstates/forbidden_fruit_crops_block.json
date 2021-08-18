@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "yeehaw:block/ff_stage_0" },
+    "age=1": { "model": "yeehaw:block/ff_stage_0" },
+    "age=2": { "model": "yeehaw:block/ff_stage_1" },
+    "age=3": { "model": "yeehaw:block/ff_stage_1" },
+    "age=4": { "model": "yeehaw:block/ff_stage_1" },
+    "age=5": { "model": "yeehaw:block/ff_stage_2" },
+    "age=6": { "model": "yeehaw:block/ff_stage_2" },
+    "age=7": { "model": "yeehaw:block/ff_stage_3" }
+  }
+}

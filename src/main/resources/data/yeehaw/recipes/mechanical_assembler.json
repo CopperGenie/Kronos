@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "GET",
+    "ERE",
+    "TEG"
+  ],
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "G":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "T":
+    {
+      "item": "yeehaw:titanite"
+    },
+    "E":
+    {
+      "item": "yeehaw:etherium"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:mechanical_assembler",
+    "count": 1
+  }
+}

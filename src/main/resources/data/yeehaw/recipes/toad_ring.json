@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "cgc",
+    "gbg",
+    "fgf"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "yeehaw:toad_cap"
+    },
+    "f":
+    {
+      "item": "yeehaw:fungal_titanite"
+    },
+    "b":
+    {
+      "item": "yeehaw:toad_father_soul"
+    },
+    "g":
+    {
+      "item": "yeehaw:magic_gold"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:toad_ring",
+    "count": 1
+  }
+}

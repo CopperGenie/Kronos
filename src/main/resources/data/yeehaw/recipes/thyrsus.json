@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ESE",
+    "EGE",
+    "WLW"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:spruce_sapling"
+    },
+    "G":
+    {
+      "item": "yeehaw:giant_soul"
+    },
+    "W":
+    {
+      "tag": "minecraft:wool"
+    },
+    "L":
+    {
+      "item": "minecraft:spruce_log"
+    },
+    "E":
+    {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:thyrsus",
+    "count": 1
+  }
+}

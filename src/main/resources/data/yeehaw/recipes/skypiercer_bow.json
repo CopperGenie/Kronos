@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " XY",
+    "X Y",
+    " XY"
+  ],
+  "key":
+  {
+    "Y":
+    {
+      "item": "minecraft:string"
+    },
+    "X":
+    {
+      "item": "yeehaw:giants_branch"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:skypiercer_bow",
+    "count": 1
+  }
+}

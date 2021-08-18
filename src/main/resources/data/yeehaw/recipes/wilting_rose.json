@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "SRS",
+    "CGC",
+    "DDD"
+  ],
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:rose_bush"
+    },
+    "G":
+    {
+      "item": "yeehaw:giant_soul"
+    },
+    "S":
+    {
+      "item": "minecraft:spider_eye"
+    },
+    "C":
+    {
+      "item": "yeehaw:cubic_roseum"
+    },
+    "D":
+    {
+      "item": "minecraft:dead_bush"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:wilting_rose",
+    "count": 1
+  }
+}

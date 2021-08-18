@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "yeehaw:giant_soul"
+  },
+  "result": "yeehaw:soul",
+  "count": 4,
+  "experience": 0,
+  "cookingtime": 160
+}

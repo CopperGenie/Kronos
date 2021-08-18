@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:soul"
+    },
+    {
+      "item": "yeehaw:soul"
+    },
+    {
+      "item": "yeehaw:soul"
+    },
+    {
+      "item": "yeehaw:soul"
+    },
+    {
+      "item": "yeehaw:arcane_emulsifier"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:giant_soul",
+    "count": 1
+  }
+}

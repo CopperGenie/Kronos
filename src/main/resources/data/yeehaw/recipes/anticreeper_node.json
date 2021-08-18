@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "OMO",
+    "RAR",
+    "OMO"
+  ],
+  "key":
+  {
+    "O":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "M":
+    {
+      "item": "yeehaw:magic_gold"
+    },
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "A":
+    {
+      "item": "yeehaw:anticreepus"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:anticreeper_node",
+    "count": 1
+  }
+}

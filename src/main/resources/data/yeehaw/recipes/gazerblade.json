@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " k ",
+    " e ",
+    " u "
+  ],
+  "key":
+  {
+    "k":
+    {
+      "item": "yeehaw:kraken_tooth"
+    },
+    "e":
+    {
+      "item": "yeehaw:eye_of_the_beholder"
+    },
+    "u":
+    {
+      "item": "yeehaw:understeel"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:gazerblade",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "yeehaw:sacred_texts"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:sacred_texts",
+    "count": 2
+  }
+}

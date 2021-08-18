@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:cloudstone"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "yeehaw:cureall"
+    },
+    {
+      "item": "yeehaw:forbidden_fruit"
+    },
+    {
+      "item": "yeehaw:forbidden_fruit"
+    },
+    {
+      "item": "yeehaw:forbidden_fruit"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:panacea",
+    "count": 1
+  }
+}

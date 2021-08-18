@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 4,
+          "functions":[{"function":"set_count","count":{"min":2,"max":4}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:phylactery",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 10,
+          "functions":[{"function":"set_count","count":{"min":1,"max":3}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{title:\"Eternal\",author:\"The Lich\",pages:['{\"text\":\"They called me a madman when I claimed to have uncovered the secret to eternal life. I was driven from my beloved city and banished from the kingdom for the practice of \\\\\"witchcraft\\\\\".\"}','{\"text\":\"After days of wandering through the wilderness, starved and cold, I came across an abandoned tower from the second age. I made it my home and began my work, collecting what I needed to craft my phylactery.\"}','{\"text\":\"After long last, I had done it! I had achieved what so many could only dream of. Now I am free to master the arts of the arcane...to become the most powerful sorcerer in the land, and to take revenge on those who have shunned me!\"}']}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:soul",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

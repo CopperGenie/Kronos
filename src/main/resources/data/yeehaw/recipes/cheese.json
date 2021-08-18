@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:cheese",
+    "count": 1
+  }
+}

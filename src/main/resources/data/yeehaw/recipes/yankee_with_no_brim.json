@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "WSW",
+    "W W"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:nimbus_giant_soul"
+    },
+    "W":
+    {
+      "item": "minecraft:blue_wool"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:yankee_with_no_brim",
+    "count": 1
+  }
+}

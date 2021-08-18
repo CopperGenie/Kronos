@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:blank_scroll"
+    },
+    {
+      "item": "yeehaw:mechanical_assembler"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    },
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:scroll_of_gods_grip",
+    "count": 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:etherium",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":4}}]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:shadow_demon_soul",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:obsidian",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":6}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":6}}]
+        }
+      ]
+    }
+  ]
+}

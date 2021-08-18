@@ -1,0 +1,52 @@
+{
+  "type": "yeehaw:std_no_sleep",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "seed": 1,
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "biomes": [
+        {
+          "biome": "yeehaw:the_dungeon",
+          "parameters": {
+            "altitude":     0.0,
+            "temperature":  0.0,
+            "humidity":     0.0,
+            "weirdness":    0.0,
+            "offset":       0
+          }
+        }
+      ]
+    },
+    "seed": 0,
+    "settings": "yeehaw:the_dungeon",
+    "type": "minecraft:noise"
+  }
+}

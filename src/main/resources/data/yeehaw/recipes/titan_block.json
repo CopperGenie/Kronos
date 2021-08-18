@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "yeehaw:titan_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:titan_block",
+    "count": 1
+  }
+}

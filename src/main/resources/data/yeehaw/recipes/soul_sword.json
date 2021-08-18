@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " x ",
+    " s "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "yeehaw:soul_steel"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:soul_sword",
+    "count": 1
+  }
+}

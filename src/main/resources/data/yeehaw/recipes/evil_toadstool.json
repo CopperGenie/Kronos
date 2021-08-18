@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CCC",
+    "SGS",
+    "EUE"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "yeehaw:toad_cap"
+    },
+    "S":
+    {
+      "item": "minecraft:spider_eye"
+    },
+    "G":
+    {
+      "item": "yeehaw:giant_soul"
+    },
+    "E":
+    {
+      "item": "minecraft:ender_eye"
+    },
+    "U":
+    {
+      "item": "yeehaw:understeel"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:evil_toadstool",
+    "count": 1
+  }
+}

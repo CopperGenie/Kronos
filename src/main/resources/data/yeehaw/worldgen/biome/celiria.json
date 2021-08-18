@@ -1,0 +1,72 @@
+{
+  "surface_builder": "yeehaw:grass_sand",
+  "depth": 1.00,
+  "scale": 0.40,
+  "temperature": 0.8,
+  "downfall": 0,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "forest",
+  "player_spawn_friendly": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 7907327,
+    "fog_color": 12638463,
+    "water_color": 3394815,
+    "water_fog_color": 329011,
+    "grass_color": 62936,
+    "foliage_color": 3397375,
+    "particle": {
+      "probability": 0.012
+    }
+  },
+  "starts": [],
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:skeleton",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "yeehaw:canyon_100",
+      "minecraft:cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "yeehaw:disk_sand_much",
+      "yeehaw:ore_opal",
+      "yeehaw:ore_titanite",
+      "yeehaw:ore_meteorite"
+    ],
+    [],
+    [
+      "minecraft:patch_grass_forest",
+      "minecraft:flower_swamp",
+      "yeehaw:waterlily_sparse",
+      "yeehaw:forest_flower_trees_oak_leaves",
+      "yeehaw:lily_of_the_valley"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

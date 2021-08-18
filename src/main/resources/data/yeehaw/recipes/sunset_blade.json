@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:sunset_blade_hilt"
+    },
+    {
+      "item": "yeehaw:sunset_blade_blade"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:sunset_blade",
+    "count": 1
+  }
+}

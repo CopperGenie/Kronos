@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "yeehaw:forbidden_fruit"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:antidote",
+    "count": 1
+  }
+}

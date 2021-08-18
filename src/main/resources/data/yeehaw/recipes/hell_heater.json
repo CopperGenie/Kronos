@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BBB",
+    "TST",
+    " T "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:shadow_demon_soul"
+    },
+    "T":
+    {
+      "item": "yeehaw:titanite"
+    },
+    "B":
+    {
+      "item": "yeehaw:brimstone"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:hell_heater",
+    "count": 1
+  }
+}

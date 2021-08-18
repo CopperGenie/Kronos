@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yeehaw:fungal_titanite_block"
+    }
+  ],
+  "result":
+  {
+    "item": "yeehaw:fungal_titanite",
+    "count": 9
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "uuu",
+    "u u",
+    "   "
+  ],
+  "key":
+  {
+    "u":
+    {
+      "item": "yeehaw:understeel"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:drow_helmet",
+    "count": 1
+  }
+}

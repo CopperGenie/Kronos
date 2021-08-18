@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "EEE",
+    "ESE",
+    "EEE"
+  ],
+  "key":
+  {
+    "E":
+    {
+      "item": "minecraft:egg"
+    },
+    "S":
+    {
+      "item": "yeehaw:sacred_texts"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:seggred_teggsts",
+    "count": 1
+  }
+}

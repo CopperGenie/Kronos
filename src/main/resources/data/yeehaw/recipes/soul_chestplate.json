@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x x",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "yeehaw:soul_steel"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:soul_chestplate",
+    "count": 1
+  }
+}

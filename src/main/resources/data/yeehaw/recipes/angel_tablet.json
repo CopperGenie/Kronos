@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "SBS",
+    "BXB",
+    "SBS"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:stone"
+    },
+    "B":
+    {
+      "item": "yeehaw:black_iris"
+    },
+    "X":
+    {
+      "item": "yeehaw:mechanical_assembler"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:angel_tablet",
+    "count": 1
+  }
+}

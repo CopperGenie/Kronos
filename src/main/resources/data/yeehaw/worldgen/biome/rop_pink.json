@@ -1,0 +1,83 @@
+{
+  "surface_builder": "yeehaw:grass_sand",
+  "depth": 0.125,
+  "scale": 0.50,
+  "temperature": 0.8,
+  "downfall": 0,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "forest",
+  "player_spawn_friendly": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 15634171,
+    "fog_color": 16499455,
+    "water_color": 2559007,
+    "water_fog_color": 2032922,
+    "grass_color": 5757434,
+    "foliage_color": 16449791,
+    "particle": {
+      "options": {
+        "type": "minecraft:dragon_breath"
+      },
+      "probability": 0.001
+    }
+  },
+  "starts": [],
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:illusioner",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:chicken",
+        "weight": 30,
+        "minCount": 3,
+        "maxCount": 5
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "yeehaw:canyon_100",
+      "minecraft:cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "yeehaw:disk_sand_much",
+      "yeehaw:ore_opal",
+      "yeehaw:ore_titanite",
+      "yeehaw:ore_meteorite"
+    ],
+    [],
+    [
+      "minecraft:patch_grass_forest",
+      "minecraft:ice_spike",
+      "yeehaw:phantasmus_trees",
+      "yeehaw:phantasmus_soul_torch",
+      "yeehaw:phantasmus_glass"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

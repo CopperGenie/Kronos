@@ -1,0 +1,75 @@
+{
+  "surface_builder": "yeehaw:bedrock",
+  "depth": 0.5,
+  "scale": 0.10,
+  "temperature": 1,
+  "downfall": 1,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "plains",
+  "player_spawn_friendly": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 11346689,
+    "fog_color": 16738657,
+    "water_color": 16756224,
+    "water_fog_color": 11750656,
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.004
+    }
+  },
+  "starts": [
+    "yeehaw:gas_station"
+  ],
+  "spawners": {
+    "monster": [
+      {
+        "type": "yeehaw:x0026g",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "yeehaw:the_police",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:canyon",
+      "minecraft:cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "yeehaw:ore_opal",
+      "yeehaw:ore_titanite",
+      "yeehaw:ore_meteorite"
+    ],
+    [],
+    [],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

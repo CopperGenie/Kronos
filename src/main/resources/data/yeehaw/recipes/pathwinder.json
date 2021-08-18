@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "AGB",
+    "GSG",
+    "DCE"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:rose_queen_soul"
+    },
+    "G":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "C":
+    {
+      "item": "minecraft:compass"
+    },
+    "A":
+    {
+      "item": "minecraft:spruce_sapling"
+    },
+    "B":
+    {
+      "item": "minecraft:acacia_sapling"
+    },
+    "D":
+    {
+      "item": "minecraft:jungle_sapling"
+    },
+    "E":
+    {
+      "item": "minecraft:birch_sapling"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:pathwinder",
+    "count": 1
+  }
+}

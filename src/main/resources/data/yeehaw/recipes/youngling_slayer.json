@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CSC",
+    "COC",
+    " T "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "yeehaw:crystal_shard"
+    },
+    "C":
+    {
+      "item": "yeehaw:cloudstone"
+    },
+    "O":
+    {
+      "item": "minecraft:conduit"
+    },
+    "T":
+    {
+      "item": "yeehaw:titanite"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:youngling_slayer",
+    "count": 1
+  }
+}

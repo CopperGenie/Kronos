@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:etherium",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":4}}]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:toad_father_soul",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:fungal_essence",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":1,"max":2}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:understeel",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":1,"max":2}}]
+        }
+      ]
+    }
+  ]
+}

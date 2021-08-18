@@ -1,0 +1,51 @@
+{
+  "config": {
+    "feature": {
+      "config": {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": "yeehaw:aspen",
+                "chance": 0.30
+              },
+              {
+                "feature": "yeehaw:oak_with_birch_leaves",
+                "chance": 0.25
+              },
+              {
+                "feature": "minecraft:birch",
+                "chance": 0.20
+              }
+            ],
+            "default": "minecraft:spruce"
+          },
+          "type": "minecraft:random_selector"
+        },
+        "decorator": {
+          "config": {
+            "outer": {
+              "config": {},
+              "type": "minecraft:square"
+            },
+            "inner": {
+              "config": {},
+              "type": "minecraft:heightmap"
+            }
+          },
+          "type": "minecraft:decorated"
+        }
+      },
+      "type": "minecraft:decorated"
+    },
+    "decorator": {
+      "config": {
+        "count": 1,
+        "extra_chance": 0.3,
+        "extra_count": 1
+      },
+      "type": "minecraft:count_extra"
+    }
+  },
+  "type": "minecraft:decorated"
+}

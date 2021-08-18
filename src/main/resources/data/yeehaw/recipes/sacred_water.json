@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:potion"
+    },
+    "y":
+    {
+      "item": "yeehaw:sacred_texts"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:sacred_water",
+    "count": 8
+  }
+}

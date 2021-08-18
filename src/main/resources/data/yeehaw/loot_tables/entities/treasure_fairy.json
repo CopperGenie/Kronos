@@ -1,0 +1,124 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:etherium",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:titanite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:cloudstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:understeel",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:cubic_roseum",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:hexagonal_roseum",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 12,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:tattered_soul",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:soul",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:giant_soul",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:pathwinder",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

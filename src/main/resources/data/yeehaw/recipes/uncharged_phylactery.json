@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "HTH",
+    "TST",
+    "HTH"
+  ],
+  "key":
+  {
+    "H":
+    {
+      "item": "yeehaw:hexagonal_roseum"
+    },
+    "T":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "S":
+    {
+      "item": "yeehaw:soul"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:uncharged_phylactery",
+    "count": 1
+  }
+}

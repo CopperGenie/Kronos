@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " y ",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stone"
+    },
+    "y":
+    {
+      "item": "minecraft:stone_sword"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:sword_in_the_stone",
+    "count": 1
+  }
+}

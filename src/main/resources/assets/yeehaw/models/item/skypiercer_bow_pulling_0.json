@@ -1,0 +1,6 @@
+{
+  "parent": "yeehaw:items/skypiercer_bow",
+  "textures": {
+    "layer0": "yeehaw:items/skypiercer_bow_pulling_0"
+  }
+}

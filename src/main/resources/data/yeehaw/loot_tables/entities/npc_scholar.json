@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_fire",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_healing",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_freezing",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_might",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_summoning",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_the_plains",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

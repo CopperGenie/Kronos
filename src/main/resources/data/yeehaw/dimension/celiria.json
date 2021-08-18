@@ -1,0 +1,12 @@
+{
+  "type": "yeehaw:std_no_sleep",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "yeehaw:celiria"
+    },
+    "seed": 0,
+    "settings": "yeehaw:celiria",
+    "type": "minecraft:noise"
+  }
+}

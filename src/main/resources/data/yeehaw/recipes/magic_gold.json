@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " e ",
+    "ege",
+    " e "
+  ],
+  "key":
+  {
+    "g":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "e":
+    {
+      "item": "yeehaw:enchanted_dust"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:magic_gold",
+    "count": 1
+  }
+}

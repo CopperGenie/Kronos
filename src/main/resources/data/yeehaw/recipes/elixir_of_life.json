@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "whw",
+    "wpw",
+    "bbb"
+  ],
+  "key":
+  {
+    "w":
+    {
+      "item": "yeehaw:sacred_water"
+    },
+    "p":
+    {
+      "item": "yeehaw:phylactery"
+    },
+    "h":
+    {
+      "item": "yeehaw:hexagonal_roseum"
+    },
+    "b":
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result":
+  {
+    "item": "yeehaw:elixir_of_life",
+    "count": 30
+  }
+}

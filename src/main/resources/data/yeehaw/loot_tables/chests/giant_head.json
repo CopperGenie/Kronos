@@ -1,0 +1,197 @@
+{
+   "type": "chest",
+   "pools": [
+      {
+         "rolls": 27,
+         "entries": [
+            {
+               "type": "item",
+               "weight": 25,
+               "name": "yeehaw:data_chronicle",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  },
+                  {
+                     "function": "set_lore",
+                     "lore": [
+                        {
+                           "text": "100% Full"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "item",
+               "weight": 15,
+               "name": "minecraft:book",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  },
+                  {
+                     "function": "set_name",
+                     "name": [
+                        {
+                           "text": "Data Chronicle"
+                        }
+                     ]
+                  },
+                  {
+                     "function": "set_lore",
+                     "lore": [
+                        {
+                           "text": "0% Full"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "item",
+               "weight": 2,
+               "name": "minecraft:diamond",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  }
+               ]
+            },
+            {
+               "type": "item",
+               "weight": 1,
+               "name": "minecraft:book",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  },
+                  {
+                     "function": "set_name",
+                     "name": [
+                        {
+                           "text": "Data Chronicle"
+                        }
+                     ]
+                  },
+                  {
+                     "function": "set_lore",
+                     "lore": [
+                        {
+                           "text": "[Special Event]",
+                           "color": "yellow"
+                        },
+                        {
+                           "text": "Birth of The Sun"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "item",
+               "weight": 1,
+               "name": "minecraft:book",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  },
+                  {
+                     "function": "set_name",
+                     "name": [
+                        {
+                           "text": "Data Chronicle"
+                        }
+                     ]
+                  },
+                  {
+                     "function": "set_lore",
+                     "lore": [
+                        {
+                           "text": "[Special Event]",
+                           "color": "yellow"
+                        },
+                        {
+                           "text": "Ender Dragon Rises to Power"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "item",
+               "weight": 1,
+               "name": "minecraft:book",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  },
+                  {
+                     "function": "set_name",
+                     "name": [
+                        {
+                           "text": "Data Chronicle"
+                        }
+                     ]
+                  },
+                  {
+                     "function": "set_lore",
+                     "lore": [
+                        {
+                           "text": "[Special Event]",
+                           "color": "yellow"
+                        },
+                        {
+                           "text": "The Void Is Contained"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "item",
+               "weight": 1,
+               "name": "yeehaw:herobrine_chronicle",
+               "functions": [
+                  {
+                     "function": "set_count",
+                     "count": 1
+                  },
+                  {
+                     "function": "set_name",
+                     "name": [
+                        {
+                           "text": "Data Chronicle"
+                        }
+                     ]
+                  },
+                  {
+                     "function": "set_lore",
+                     "lore": [
+                        {
+                           "text": "[Special Event]",
+                           "color": "yellow"
+                        },
+                        [
+                           {
+                              "text": "Herobrine Banished to "
+                           },
+                           {
+                              "obfuscated":"true",
+                              "text": "abcdefg"
+                           }
+                        ]
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

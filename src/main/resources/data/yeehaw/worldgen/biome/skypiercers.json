@@ -1,0 +1,112 @@
+{
+  "depth": 0.45,
+  "scale": 1.00,
+  "effects": {
+    "sky_color": 7907327,
+    "fog_color": 12638463,
+    "water_color": 1927164,
+    "water_fog_color": 329011,
+    "grass_color": 240896
+  },
+  "surface_builder": "yeehaw:grass_sand",
+  "carvers": {
+    "air": [
+      "yeehaw:cave_60",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "yeehaw:disk_sand_much",
+      "yeehaw:ore_opal",
+      "yeehaw:ore_titanite",
+      "yeehaw:ore_meteorite",
+      "yeehaw:ore_cloudstone"
+    ],
+    [],
+    [
+      "minecraft:patch_grass_forest",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "yeehaw:spruce"
+    ],
+    []
+  ],
+  "starts": [
+    "yeehaw:giant_head",
+    "yeehaw:the_library"
+  ],
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:skeleton",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:spider",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "yeehaw:troll",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:llama",
+        "weight": 200,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:cow",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "yeehaw:giant",
+        "weight": 50,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "yeehaw:flint_monger",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 5,
+        "maxCount": 5
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "precipitation": "none",
+  "temperature": 1.0,
+  "downfall": 0.0,
+  "category": "forest"
+}
