@@ -168,17 +168,19 @@ public class ModEvents {
     public static void whileHoldingPathwinder(LivingEvent.LivingUpdateEvent event) {
         LivingEntity player = event.getEntityLiving();
         World world = player.getEntityWorld();
-        if ((player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get()) && (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.AIR.getDefaultState())) {
-            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.GRASS_BLOCK.getDefaultState());
-        }
-        else if ((player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get()) && (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.CAVE_AIR.getDefaultState())) {
-            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.STONE.getDefaultState());
-        }
-        else if ((player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get()) && (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.WATER.getDefaultState())) {
-            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.ICE.getDefaultState());
-        }
-        else if ((player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get()) && (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.LAVA.getDefaultState())) {
-            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.OBSIDIAN.getDefaultState());
+        if (player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get() || player.getHeldItemMainhand().getItem() == ModItems.PATHWINDER.get()) {
+            if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.AIR.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.GRASS_BLOCK.getDefaultState());
+            }
+            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.CAVE_AIR.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.STONE.getDefaultState());
+            }
+            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.WATER.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.ICE.getDefaultState());
+            }
+            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.LAVA.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.OBSIDIAN.getDefaultState());
+            }
         }
     }
 
@@ -442,7 +444,7 @@ public class ModEvents {
     @SubscribeEvent
     public static void onJumpWithSkyGem(LivingEvent.LivingJumpEvent event) {
         LivingEntity player = event.getEntityLiving();
-        if (player.getHeldItemOffhand().getItem() == ModItems.SKY_GEM.get()) {
+        if (player.getHeldItemOffhand().getItem() == ModItems.SKY_GEM.get() || player.getHeldItemMainhand().getItem() == ModItems.SKY_GEM.get()) {
             player.addPotionEffect(new EffectInstance(Effects.LEVITATION, 20*10, 2, false, false));
             player.addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, 20*15, 0, false, false));
         }
@@ -864,7 +866,8 @@ public class ModEvents {
     @SubscribeEvent
     public static void onHoldTTGloveInOffhand(LivingEvent.LivingUpdateEvent event) {
         LivingEntity player = event.getEntityLiving();
-        if (player.getHeldItemOffhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()) {
+        if (player.getHeldItemOffhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()
+                || player.getHeldItemMainhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()) {
             if (player.world.getDimensionKey().equals(Yeehaw.PILOT_RED_SUN)) {
                 ItemStack itemstack = player.getHeldItemOffhand();
                 int itemCount = itemstack.getCount();

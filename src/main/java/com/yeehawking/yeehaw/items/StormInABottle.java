@@ -5,6 +5,7 @@ import com.yeehawking.yeehaw.entities.MindFlayerEntity;
 import com.yeehawking.yeehaw.entities.NimbusGiantEntity;
 import com.yeehawking.yeehaw.init.ModEntityType;
 import com.yeehawking.yeehaw.init.SoundInit;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
@@ -12,14 +13,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.Hand;
-import net.minecraft.util.SoundEvents;
-import net.minecraft.util.text.IFormattableTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.*;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,15 +32,61 @@ public class StormInABottle extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        if (playerIn.getEntityWorld() instanceof ServerWorld) {
-            ServerWorld serverWorld = (ServerWorld) playerIn.getEntityWorld();
+        double posX = 0; double posY = 0; double posZ = 0;
 
-            ModEntityType.NIMBUS_GIANT.get().spawn(serverWorld, null, null, playerIn.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
-
-            ItemStack itemstack = playerIn.getHeldItemMainhand();
-            itemstack.shrink(1);
+        if (playerIn.getHorizontalFacing() == Direction.NORTH) { //  -Z
+            posX = playerIn.getPosX();
+            posZ = playerIn.getPosZ() - 6;
         }
-        playerIn.playSound(SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, 0.9f, 0.8f);
+        else if (playerIn.getHorizontalFacing() == Direction.EAST) { //  +X
+            posX = playerIn.getPosX() + 6;
+            posZ = playerIn.getPosZ();
+        }
+        else if (playerIn.getHorizontalFacing() == Direction.SOUTH) { //  +Z
+            posX = playerIn.getPosX();
+            posZ = playerIn.getPosZ() + 6;
+        }
+        else if (playerIn.getHorizontalFacing() == Direction.WEST) { //  -X
+            posX = playerIn.getPosX() - 6;
+            posZ = playerIn.getPosZ();
+        }
+
+        for (int i = 250; i >= 0; i--) {
+            if ( (worldIn.getBlockState(new BlockPos(posX, i - 1, posZ)) != Blocks.AIR.getDefaultState()) &&
+                    (worldIn.getBlockState(new BlockPos(posX, i - 1, posZ)) != Blocks.CAVE_AIR.getDefaultState()) &&
+                    (worldIn.getBlockState(new BlockPos(posX, i - 1, posZ)) != Blocks.VOID_AIR.getDefaultState())) {
+
+                posY = i;
+                break;
+            }
+
+            if (i == 0) {
+                posY = 70;
+                worldIn.setBlockState(new BlockPos(posX, posY - 1, posZ), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX+1, posY - 1, posZ), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX-1, posY - 1, posZ), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX, posY - 1, posZ+1), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX+1, posY - 1, posZ+1), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX-1, posY - 1, posZ+1), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX, posY - 1, posZ-1), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX+1, posY - 1, posZ-1), Blocks.STONE.getDefaultState());
+                worldIn.setBlockState(new BlockPos(posX-1, posY - 1, posZ-1), Blocks.STONE.getDefaultState());
+            }
+        }
+
+        if (worldIn.getBlockState(new BlockPos(posX, posY, posZ)) == Blocks.BEDROCK.getDefaultState()) {
+            if (!playerIn.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent("Nimbus Giant can't find you here!"), playerIn.getUniqueID()); }
+        } else {
+            if (worldIn instanceof ServerWorld) {
+                ServerWorld serverWorld = (ServerWorld) playerIn.getEntityWorld();
+                ModEntityType.NIMBUS_GIANT.get().spawn(serverWorld, null, null, new BlockPos(posX,posY,posZ), SpawnReason.EVENT, false, true);
+
+                ItemStack itemstack = playerIn.getHeldItemMainhand();
+                itemstack.shrink(1);
+            }
+
+            playerIn.playSound(SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, 0.9f, 0.8f);
+        }
 
         return ActionResult.resultPass(playerIn.getHeldItem(handIn));
     }

@@ -42,7 +42,7 @@ public class NimbusGiantEntity extends MonsterEntity implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.XXXX", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.nimbus_giant.float", true));
         return PlayState.CONTINUE;
     }
 
@@ -111,7 +111,7 @@ public class NimbusGiantEntity extends MonsterEntity implements IAnimatable {
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.WEATHER_RAIN;
+        return null;
     }
     @Override
     protected SoundEvent getDeathSound() {
@@ -119,7 +119,7 @@ public class NimbusGiantEntity extends MonsterEntity implements IAnimatable {
     }
     @Override
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.ENTITY_PILLAGER_HURT;
+        return SoundEvents.WEATHER_RAIN;
     }
 
     protected float getSoundVolume() {

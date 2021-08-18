@@ -259,7 +259,21 @@ public class NPCAelymoreEntity extends AnimalEntity {
                 }
 
                 else if (questNumber == 12) {
-                    if ( (playerIn.getHeldItemMainhand().getItem() == Items.DIAMOND_SWORD) || ( (playerIn.getHeldItemMainhand().getItem() == Items.IRON_SWORD) && ( (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == Items.IRON_HELMET) || (playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.IRON_CHESTPLATE) || (playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == Items.IRON_LEGGINGS) || (playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == Items.IRON_BOOTS) || (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == Items.DIAMOND_HELMET) || (playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.DIAMOND_CHESTPLATE) || (playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == Items.DIAMOND_LEGGINGS) || (playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == Items.DIAMOND_BOOTS) ) ) ) {
+                    if ( (playerIn.getHeldItemMainhand().getItem() == Items.NETHERITE_SWORD) ||
+                            (playerIn.getHeldItemMainhand().getItem() == Items.DIAMOND_SWORD) ||
+                            ( (playerIn.getHeldItemMainhand().getItem() == Items.IRON_SWORD) &&
+                            ( (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == Items.IRON_HELMET) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.IRON_CHESTPLATE) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == Items.IRON_LEGGINGS) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == Items.IRON_BOOTS) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == Items.DIAMOND_HELMET) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.DIAMOND_CHESTPLATE) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == Items.DIAMOND_LEGGINGS) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == Items.DIAMOND_BOOTS) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == Items.NETHERITE_HELMET) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.NETHERITE_CHESTPLATE) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == Items.NETHERITE_LEGGINGS) ||
+                                    (playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == Items.NETHERITE_BOOTS)) ) ) {
                         taskMessage = TextFormatting.YELLOW + "[Aelymore] " + TextFormatting.WHITE + "Alas, not what I had hoped for. But it will do for now.";
                         if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
                         taskMessage = TextFormatting.YELLOW + "[Aelymore] " + TextFormatting.WHITE + "I have been thinking of our next move. As I mentioned, Kronos resides in an unreachable realm and I do not yet know of a way in. But there is a great historian, Wynnbrim, who can be found in his library far to the east in the Skypiercers. Of all the great wisemen in our time, he is truly the most knowledgeable. He may know a way into that wretched place.";

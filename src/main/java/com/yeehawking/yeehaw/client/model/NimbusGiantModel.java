@@ -27,19 +27,19 @@ public class NimbusGiantModel extends AnimatedGeoModel<NimbusGiantEntity>
     @Override
     public ResourceLocation getModelLocation(NimbusGiantEntity object)
     {
-        return new ResourceLocation(GeckoLib.ModID, "geo/jack.geo.json");
+        return new ResourceLocation(GeckoLib.ModID, "geo/entity/nimbus_giant.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureLocation(NimbusGiantEntity object)
     {
-        return new ResourceLocation(GeckoLib.ModID, "textures/item/jack.png");
+        return new ResourceLocation(GeckoLib.ModID, "textures/entity/nimbus_giant.png");
     }
 
     @Override
     public ResourceLocation getAnimationFileLocation(NimbusGiantEntity object)
     {
-        return new ResourceLocation(GeckoLib.ModID, "animations/jackinthebox.animation.json");
+        return new ResourceLocation(GeckoLib.ModID, "animations/entity/nimbus_giant.animation.json");
     }
 }
 
