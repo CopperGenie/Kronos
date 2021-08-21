@@ -229,6 +229,12 @@ public class NPCOswirEntity extends AnimalEntity {
                         this.entityDropItem(ModItems.WORLD_KEY_PILOT_RED_SUN.get());
                         taskMessage = TextFormatting.YELLOW + "[Oswir the Keyfinder] " + TextFormatting.WHITE + "Here you are, noble one. Be careful not to lose it this time!"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
                     }
+                    else if ( (playerIn.getHeldItemMainhand().getItem() == ModItems.METEORITE_ITEM.get()) && (playerIn.getTags().contains("gotNowhereKey")) ) {
+                        itemstack.shrink(1);
+                        playerIn.playSound(SoundEvents.ENTITY_ITEM_PICKUP, 0.8f, 1f);
+                        this.entityDropItem(ModItems.WORLD_KEY_NOWHERE.get());
+                        taskMessage = TextFormatting.YELLOW + "[Oswir the Keyfinder] " + TextFormatting.WHITE + "Here you are, noble one. Be careful not to lose it this time!"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    }
 
                     else {
                         taskMessage = TextFormatting.YELLOW + "[Oswir the Keyfinder] " + TextFormatting.WHITE + "Here are the keys I can currently retrieve for you:"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
@@ -258,6 +264,9 @@ public class NPCOswirEntity extends AnimalEntity {
                         }
                         if (playerIn.getTags().contains("GotPilotRedSunKey")) {
                             taskMessage = TextFormatting.GOLD + "PilotRedSun -- 1 Etherium"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                        }
+                        if (playerIn.getTags().contains("gotNowhereKey")) {
+                            taskMessage = TextFormatting.GOLD + "Nowhere -- 1 Meteorite"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
                         }
                     }
                 }

@@ -53,6 +53,7 @@ public class NPCKrorkEntity extends AnimalEntity {
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new SwimGoal(this));
+        this.goalSelector.addGoal(6, new LookAtGoal(this, NPCGasmanEntity.class, 10.0f));
         this.goalSelector.addGoal(7, new LookAtGoal(this, PlayerEntity.class, 12.0f));
         this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
     }

@@ -50,6 +50,7 @@ public class NPCGasmanEntity extends AnimalEntity {
         super.registerGoals();
         this.goalSelector.addGoal(0, new SwimGoal(this));
         this.goalSelector.addGoal(1, new PanicGoal(this, 1.3d));
+        this.goalSelector.addGoal(6, new LookAtGoal(this, NPCKrorkEntity.class, 10.0f));
         this.goalSelector.addGoal(7, new LookAtGoal(this, PlayerEntity.class, 12.0f));
         this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
     }
@@ -85,9 +86,9 @@ public class NPCGasmanEntity extends AnimalEntity {
     @Override
     public AgeableEntity createChild(ServerWorld world, AgeableEntity mate) { return null; }
 
-    private static final DataParameter<Integer> TEXTURE = EntityDataManager.createKey(NPCAelymoreEntity.class, DataSerializers.VARINT);
-    private static final DataParameter<Integer> QUEST_NUMBER = EntityDataManager.createKey(NPCKrorkEntity.class, DataSerializers.VARINT);
-    private static final DataParameter<Integer> QUARTZ_COUNT = EntityDataManager.createKey(NPCKrorkEntity.class, DataSerializers.VARINT);
+    private static final DataParameter<Integer> TEXTURE = EntityDataManager.createKey(NPCGasmanEntity.class, DataSerializers.VARINT);
+    private static final DataParameter<Integer> QUEST_NUMBER = EntityDataManager.createKey(NPCGasmanEntity.class, DataSerializers.VARINT);
+    private static final DataParameter<Integer> QUARTZ_COUNT = EntityDataManager.createKey(NPCGasmanEntity.class, DataSerializers.VARINT);
 
     protected void registerData() {
         super.registerData();

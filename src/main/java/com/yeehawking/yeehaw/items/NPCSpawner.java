@@ -46,6 +46,8 @@ public class NPCSpawner extends Item {
             ModEntityType.NPC_TENEBRIK.get().spawn(serverWorld, null, null, playerIn.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
             ModEntityType.NPC_AELYMORE.get().spawn(serverWorld, null, null, playerIn.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
             ModEntityType.NPC_SLAYER.get().spawn(serverWorld, null, null, playerIn.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
+            ModEntityType.NPC_TOMMY_TEMPUS.get().spawn(serverWorld, null, null, playerIn.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
+            ModEntityType.NPC_TIMEKEEPER.get().spawn(serverWorld, null, null, playerIn.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
 
         }
         playerIn.playSound(SoundEvents.ENTITY_COW_AMBIENT, 1f, 0.7f);

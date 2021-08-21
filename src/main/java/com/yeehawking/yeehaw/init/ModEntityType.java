@@ -199,4 +199,12 @@ public class ModEntityType {
             () -> EntityType.Builder.create(NPCKentEntity::new, EntityClassification.CREATURE)
                     .size(0.6f, 1.8f)
                     .build(new ResourceLocation(Yeehaw.MOD_ID, "npc_kent").toString()));
+    public static final RegistryObject<EntityType<NPCTimekeeperEntity>> NPC_TIMEKEEPER = ENTITY_TYPES.register("npc_timekeeper",
+            () -> EntityType.Builder.create(NPCTimekeeperEntity::new, EntityClassification.CREATURE)
+                    .size(0.6f, 1.8f)
+                    .build(new ResourceLocation(Yeehaw.MOD_ID, "npc_timekeeper").toString()));
+    public static final RegistryObject<EntityType<NPCTommyTempusEntity>> NPC_TOMMY_TEMPUS = ENTITY_TYPES.register("npc_tommy_tempus",
+            () -> EntityType.Builder.create(NPCTommyTempusEntity::new, EntityClassification.CREATURE)
+                    .size(0.6f, 1.8f)
+                    .build(new ResourceLocation(Yeehaw.MOD_ID, "npc_tommy_tempus").toString()));
 }

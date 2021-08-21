@@ -112,6 +112,8 @@ public class Yeehaw
             GlobalEntityTypeAttributes.put(ModEntityType.NPC_ELIZABETH.get(), NPCElizabethEntity.setCustomAttributes().create());
             GlobalEntityTypeAttributes.put(ModEntityType.ANGEL.get(), AngelEntity.setCustomAttributes().create());
             GlobalEntityTypeAttributes.put(ModEntityType.NPC_KENT.get(), NPCKentEntity.setCustomAttributes().create());
+            GlobalEntityTypeAttributes.put(ModEntityType.NPC_TIMEKEEPER.get(), NPCTimekeeperEntity.setCustomAttributes().create());
+            GlobalEntityTypeAttributes.put(ModEntityType.NPC_TOMMY_TEMPUS.get(), NPCTommyTempusEntity.setCustomAttributes().create());
 
             CURSED_FOREST = RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("yeehaw", "cursed_forest"));
             ERODED_DESERT = RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("yeehaw", "eroded_desert"));

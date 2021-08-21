@@ -6,6 +6,7 @@ import com.yeehawking.yeehaw.entities.ThePoliceEntity;
 import com.yeehawking.yeehaw.entities.x0026gEntity;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.util.math.MathHelper;
 
 public class PoliceCarModel<T extends ThePoliceEntity> extends EntityModel<T> {
 
@@ -71,6 +72,8 @@ public class PoliceCarModel<T extends ThePoliceEntity> extends EntityModel<T> {
 
     @Override
     public void setRotationAngles(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+//        float ageInSeconds = (float)Math.floor(ageInTicks / 20);
+//        this.bb_main.rotateAngleY = ageInSeconds * (float)Math.PI ;
     }
 
     @Override

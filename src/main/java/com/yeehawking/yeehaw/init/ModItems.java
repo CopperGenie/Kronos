@@ -50,6 +50,7 @@ public class ModItems {
     public static final RegistryObject<Item> SPACE_JUNK = ITEMS.register("space_junk", ItemBase::new);
     public static final RegistryObject<Item> SUNSET_BLADE_BLADE = ITEMS.register("sunset_blade_blade", ItemBase::new);
     public static final RegistryObject<Item> SUNSET_BLADE_HILT = ITEMS.register("sunset_blade_hilt", ItemBase::new);
+    public static final RegistryObject<Item> TIMEBANK = ITEMS.register("timebank", Timebank::new);
     public static final RegistryObject<Item> TIME_CARD = ITEMS.register("time_card", ItemBase::new);
     public static final RegistryObject<Item> TITAN_INGOT = ITEMS.register("titan_ingot", ItemBase::new);
     public static final RegistryObject<Item> TITANITE = ITEMS.register("titanite", ItemBase::new);
@@ -85,6 +86,7 @@ public class ModItems {
     public static final RegistryObject<Item> ELIXIR_OF_LIFE = ITEMS.register("elixir_of_life", ElixirOfLife::new);
     public static final RegistryObject<Item> MEAD = ITEMS.register("mead", Mead::new);
     public static final RegistryObject<Item> PANACEA = ITEMS.register("panacea", Panacea::new);
+    public static final RegistryObject<Item> RUN_RUM = ITEMS.register("run_rum", RunRum::new);
     public static final RegistryObject<Item> WINE = ITEMS.register("wine", Wine::new);
 
 

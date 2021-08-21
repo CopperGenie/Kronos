@@ -67,6 +67,8 @@ public class ClientEventBusSubscriber {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityType.NPC_ELIZABETH.get(), NPCElizabethRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityType.ANGEL.get(), AngelRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityType.NPC_KENT.get(), NPCKentRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityType.NPC_TIMEKEEPER.get(), NPCTimekeeperRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityType.NPC_TOMMY_TEMPUS.get(), NPCTommyTempusRenderer::new);
 
         RenderTypeLookup.setRenderLayer(ModBlocks.TWILIGHT_ROSE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_IRIS.get(), RenderType.getCutout());

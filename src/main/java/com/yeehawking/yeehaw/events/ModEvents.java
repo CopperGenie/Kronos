@@ -83,108 +83,6 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void onHoldSoulVacuum(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if (player.getHeldItemMainhand().getItem() == ModItems.SOUL_VACUUM.get()) {
-            World world = player.getEntityWorld();
-            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.AIR.getDefaultState());
-        }
-        if (player.getHeldItemMainhand().getItem() == ModItems.OVERCHARGED_SOUL_VACUUM.get()) {
-            World world = player.getEntityWorld();
-            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(-1, -1, 0), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(1, -1, 0), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(0, -1, -1), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(0, -1, 1), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(-1, -1, -1), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(1, -1, -1), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(1, -1, 1), Blocks.AIR.getDefaultState());
-            world.setBlockState(player.getPosition().add(-1, -1, 1), Blocks.AIR.getDefaultState());
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWearingYWNB(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        Random rand = new Random();
-        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.YANKEE_WITH_NO_BRIM.get()) {
-            World world = player.getEntityWorld();
-            int r = 2;
-            int r1 = 15;
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 0, -1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 0, 0), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 0, 1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 0, -1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 0), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 0, 2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 0, 2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 0, 2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 0, -2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 0, -2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 0, -2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 1, -1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 1, 0), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 1, 1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 1, -1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 0), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 1), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 1, 2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 1, 2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 1, 2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 1, -2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 1, -2), Blocks.AIR.getDefaultState());}
-            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 1, -2), Blocks.AIR.getDefaultState());}
-
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 0, -1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 0, 0), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 0, 1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 0, -1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 0), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 0, 2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 0, 2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 0, 2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 0, -2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 0, -2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 0, -2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 1, -1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 1, 0), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 1, 1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 1, -1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 0), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 1), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 1, 2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 1, 2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 1, 2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 1, -2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 1, -2), Blocks.STONE.getDefaultState());}
-            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 1, -2), Blocks.STONE.getDefaultState());}
-        }
-
-    }
-
-    @SubscribeEvent
-    public static void whileHoldingPathwinder(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        World world = player.getEntityWorld();
-        if (player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get() || player.getHeldItemMainhand().getItem() == ModItems.PATHWINDER.get()) {
-            if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.AIR.getDefaultState()) {
-                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.GRASS_BLOCK.getDefaultState());
-            }
-            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.CAVE_AIR.getDefaultState()) {
-                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.STONE.getDefaultState());
-            }
-            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.WATER.getDefaultState()) {
-                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.ICE.getDefaultState());
-            }
-            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.LAVA.getDefaultState()) {
-                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.OBSIDIAN.getDefaultState());
-            }
-        }
-    }
-
-    @SubscribeEvent
     public static void onHitWithBusterBlade(AttackEntityEvent event) {
         Random rand = new Random();
         if (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.BUSTER_BLADE.get()) {
@@ -311,14 +209,6 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void whileWearingHellHeater(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if (event.getEntityLiving().getHeldItemOffhand().getItem() == ModItems.HELL_HEATER.get()) {
-            player.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20*2, 0, false, false));
-        }
-    }
-
-    @SubscribeEvent
     public static void onHitWhileWearingFlayer(AttackEntityEvent event) {
         Random rand = new Random();
         if ((event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ModItems.FLAYER_ROBE_TOP.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ModItems.FLAYER_ROBE_BOTTOM.get())) {
@@ -342,57 +232,6 @@ public class ModEvents {
                     player.addPotionEffect(new EffectInstance(Effects.SPEED, 20*6, 0, false, false));
                 }
             }
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWieldingSoulPick(LivingEvent.LivingUpdateEvent event) {
-        Random rand = new Random();
-        LivingEntity player = event.getEntityLiving();
-        if ((event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.SOUL_PICKAXE.get()) && rand.nextInt(20*10) == 0) {
-            player.addPotionEffect(new EffectInstance(Effects.HASTE, 20*5, 1, false, false));
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWieldingSunsetBlade(LivingEvent.LivingUpdateEvent event) {
-        Random rand = new Random();
-        LivingEntity player = event.getEntityLiving();
-        if ((event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.SUNSET_BLADE.get()) && rand.nextInt(20*90) == 0) {
-            player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 20*30, 0, false, false));
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWieldingDrowPickWithArmor(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if ((event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ModItems.DROW_BOOTS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ModItems.DROW_CHESTPLATE.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ModItems.DROW_LEGGINGS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.DROW_HELMET.get()) && (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.DROW_PICKAXE.get())) {
-            player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 20*15, 0, false, false));
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWearingCloudBoots(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ModItems.CLOUD_BOOTS.get()) {
-            player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20*2, 1, false, false));
-            player.addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, 20*2, 0, false, false));
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWearingMeteorHelmet(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.METEOR_HELMET.get()) {
-            player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20*2, 19, false, false));
-        }
-    }
-
-    @SubscribeEvent
-    public static void whileWearingSoulArmor(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if ((event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ModItems.SOUL_BOOTS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ModItems.SOUL_CHESTPLATE.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ModItems.SOUL_LEGGINGS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.SOUL_HELMET.get())) {
-            player.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 20*2, 0, false, false));
         }
     }
 
@@ -594,7 +433,6 @@ public class ModEvents {
                     if (rand.nextInt(150) == 0) {
                         serverWorld.setBlockState(player.getPosition().add(0, 3, 0), Blocks.ANVIL.getDefaultState());
                         serverWorld.setBlockState(player.getPosition().add(0, 2, 0), Blocks.AIR.getDefaultState());
-                        //TODO: Anvil doesn't fall sometimes
                     }
 
                 }
@@ -864,19 +702,6 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void onHoldTTGloveInOffhand(LivingEvent.LivingUpdateEvent event) {
-        LivingEntity player = event.getEntityLiving();
-        if (player.getHeldItemOffhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()
-                || player.getHeldItemMainhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()) {
-            if (player.world.getDimensionKey().equals(Yeehaw.PILOT_RED_SUN)) {
-                ItemStack itemstack = player.getHeldItemOffhand();
-                int itemCount = itemstack.getCount();
-                player.addPotionEffect(new EffectInstance(Effects.SPEED, 2, (int)Math.floor((float)itemCount/2), false, false));
-            }
-        }
-    }
-
-    @SubscribeEvent
     public static void onRightClickMGWithEmerald(PlayerInteractEvent.RightClickBlock event) {
         if (event.getHand().equals(Hand.MAIN_HAND)) {
             LivingEntity player = event.getEntityLiving();
@@ -1034,30 +859,44 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void onHerobrineDeath(EntityLeaveWorldEvent event) {
-        if (event.getEntity() instanceof HerobrineEntity) {
-            if (!event.getWorld().getClosestPlayer(event.getEntity(), 1000).getTags().contains("KilledHerobrine")) {
-                if (event.getEntity().getEntityWorld() instanceof ServerWorld) {
-                    ServerWorld serverWorld = (ServerWorld) event.getEntity().getEntityWorld();
-                    serverWorld.getClosestPlayer(event.getEntity(), 1000).addTag("KilledHerobrine");
-                    serverWorld.getClosestPlayer(event.getEntity(), 1000).addTag("Quest13");
-                    ModEntityType.NPC_KENT.get().spawn(serverWorld, null, null, event.getEntity().getPosition(), SpawnReason.EVENT, false, true);
-                }
-            }
-        }
-    }
-
-    @SubscribeEvent
-    public static void onKilledWithHarvester(EntityLeaveWorldEvent event) {
+    public static void entityLeaveWorldEvent(EntityLeaveWorldEvent event) {
         if (event.getEntity() instanceof MobEntity) {
-            if (event.getWorld().isPlayerWithin(event.getEntity().getPosX(), event.getEntity().getPosY(),event.getEntity().getPosZ(),40)) {
-                if (event.getWorld().getClosestPlayer(event.getEntity(), 40).getHeldItemMainhand().getItem() == ModItems.THE_HARVESTER.get()) {
+            MobEntity entity = (MobEntity) event.getEntity();
+            if (event.getWorld().isPlayerWithin(entity.getPosX(), entity.getPosY(),entity.getPosZ(),15)) {
+                PlayerEntity player = event.getWorld().getClosestPlayer(event.getEntity(), 15);
+                if (player.getHeldItemMainhand().getItem() == ModItems.THE_HARVESTER.get()) {
                     Random rand = new Random();
                     if (rand.nextInt(20) == 0) {
                         event.getEntity().entityDropItem(ModItems.TATTERED_SOUL.get());
 
                     }
                 }
+            }
+
+            if (entity instanceof HerobrineEntity) {
+                if (!event.getWorld().getClosestPlayer(entity, 1000).getTags().contains("KilledHerobrine")) {
+                    if (entity.getEntityWorld() instanceof ServerWorld) {
+                        ServerWorld serverWorld = (ServerWorld) entity.getEntityWorld();
+                        serverWorld.getClosestPlayer(entity, 1000).addTag("KilledHerobrine");
+                        serverWorld.getClosestPlayer(entity, 1000).addTag("Quest13");
+                        serverWorld.getClosestPlayer(entity, 1000).addTag("gotNowhereKey");
+                        ModEntityType.NPC_KENT.get().spawn(serverWorld, null, null, entity.getPosition(), SpawnReason.EVENT, false, true);
+                    }
+                }
+            }
+
+            if (entity instanceof EnderDragonEntity) {
+                PlayerEntity player = event.getWorld().getClosestPlayer(entity, 400);
+                player.entityDropItem(ModItems.ETHERIUM.get());
+                player.entityDropItem(ModItems.ETHERIUM.get());
+                player.entityDropItem(ModItems.ETHERIUM.get());
+                player.entityDropItem(ModItems.ENDER_DRAGON_SOUL.get());
+            }
+
+            if (entity instanceof NPCTommyTempusEntity) {
+                PlayerEntity player = event.getWorld().getClosestPlayer(entity, 400);
+                player.removeTag("stopwatched");
+                player.addTag("killedTommy");
             }
         }
     }
@@ -1121,20 +960,13 @@ public class ModEvents {
         }
     }
 
-    @SubscribeEvent
-    public static void onEnderDragonDeath(EntityLeaveWorldEvent event) {
-        if (event.getEntity() instanceof EnderDragonEntity) {
-            PlayerEntity player = event.getWorld().getClosestPlayer(event.getEntity(), 400);
-            player.entityDropItem(ModItems.ETHERIUM.get());
-            player.entityDropItem(ModItems.ETHERIUM.get());
-            player.entityDropItem(ModItems.ETHERIUM.get());
-            player.entityDropItem(ModItems.ENDER_DRAGON_SOUL.get());
-        }
-    }
 
     @SubscribeEvent
-    public static void lightWhenHoldingTorch(LivingEvent.LivingUpdateEvent event) {
+    public static void livingUpdateEvent(LivingEvent.LivingUpdateEvent event) {
         LivingEntity player = event.getEntityLiving();
+        World world = player.getEntityWorld();
+        Random rand = new Random();
+
         if (player.getHeldItemMainhand().getItem() == Items.TORCH || player.getHeldItemOffhand().getItem() == Items.TORCH) {
             if (player.getEntityWorld().getBlockState(player.getPosition().add(0, 1, 0)) == Blocks.AIR.getDefaultState() ||
                     player.getEntityWorld().getBlockState(player.getPosition().add(0, 1, 0)) == Blocks.CAVE_AIR.getDefaultState() ||
@@ -1142,5 +974,177 @@ public class ModEvents {
                 player.getEntityWorld().setBlockState(player.getPosition().add(0, 1, 0), ModBlocks.GLOWING_AIR_BLOCK.get().getDefaultState());
             }
         }
+
+        if (event.getEntity() instanceof PlayerEntity) {
+            PlayerEntity player1 = (PlayerEntity) player;
+            if (player.getTags().contains("stopwatched")) {
+                if (rand.nextInt(20) == 0) {
+                    if (player1.experienceTotal > 0) {
+                        player1.giveExperiencePoints(-1);
+                    } else {
+                        player.removeTag("stopwatched");
+                        player.onKillCommand();
+                        player.sendMessage(new TranslationTextComponent("death.timeout", player.getDisplayName()), player.getUniqueID());
+
+                        if (player.getTags().contains("quest22")) {
+                            player.addTag("timedOutQuest22");
+                        }
+                    }
+                }
+            }
+        }
+
+        if (player.getHeldItemMainhand().getItem() == ModItems.SOUL_VACUUM.get()) {
+            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.AIR.getDefaultState());
+        }
+        if (player.getHeldItemMainhand().getItem() == ModItems.OVERCHARGED_SOUL_VACUUM.get()) {
+            world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(-1, -1, 0), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(1, -1, 0), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(0, -1, -1), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(0, -1, 1), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(-1, -1, -1), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(1, -1, -1), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(1, -1, 1), Blocks.AIR.getDefaultState());
+            world.setBlockState(player.getPosition().add(-1, -1, 1), Blocks.AIR.getDefaultState());
+        }
+
+        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.YANKEE_WITH_NO_BRIM.get()) {
+            int r = 2;
+            int r1 = 15;
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 0, -1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 0, 0), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 0, 1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 0, -1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 0), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 0, 2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 0, 2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 0, 2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 0, -2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 0, -2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 0, -2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 1, -1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 1, 0), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(2, 1, 1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 1, -1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 0), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 1), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 1, 2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 1, 2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 1, 2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(-1, 1, -2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(0, 1, -2), Blocks.AIR.getDefaultState());}
+            if (rand.nextInt(r) == 0) {world.setBlockState(player.getPosition().add(1, 1, -2), Blocks.AIR.getDefaultState());}
+
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 0, -1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 0, 0), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 0, 1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 0, -1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 0), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 0, 1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 0, 2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 0, 2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 0, 2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 0, -2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 0, -2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 0, -2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 1, -1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 1, 0), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(2, 1, 1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 1, -1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 0), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-2, 1, 1), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 1, 2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 1, 2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 1, 2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(-1, 1, -2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(0, 1, -2), Blocks.STONE.getDefaultState());}
+            if (rand.nextInt(r1) == 0) {world.setBlockState(player.getPosition().add(1, 1, -2), Blocks.STONE.getDefaultState());}
+        }
+
+        if (player.getHeldItemOffhand().getItem() == ModItems.PATHWINDER.get() || player.getHeldItemMainhand().getItem() == ModItems.PATHWINDER.get()) {
+            if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.AIR.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.GRASS_BLOCK.getDefaultState());
+            }
+            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.CAVE_AIR.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.STONE.getDefaultState());
+            }
+            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.WATER.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.ICE.getDefaultState());
+            }
+            else if (world.getBlockState(player.getPosition().add(0, -1, 0)) == Blocks.LAVA.getDefaultState()) {
+                world.setBlockState(player.getPosition().add(0, -1, 0), Blocks.OBSIDIAN.getDefaultState());
+            }
+        }
+
+        if (event.getEntityLiving().getHeldItemOffhand().getItem() == ModItems.HELL_HEATER.get()) {
+            player.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20*2, 0, false, false));
+        }
+
+        if ((event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.SOUL_PICKAXE.get()) && rand.nextInt(20*10) == 0) {
+            player.addPotionEffect(new EffectInstance(Effects.HASTE, 20*5, 1, false, false));
+        }
+
+        if ((event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.SUNSET_BLADE.get()) && rand.nextInt(20*90) == 0) {
+            player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 20*30, 0, false, false));
+        }
+
+        if ((event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ModItems.DROW_BOOTS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ModItems.DROW_CHESTPLATE.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ModItems.DROW_LEGGINGS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.DROW_HELMET.get()) && (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.DROW_PICKAXE.get())) {
+            player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 20*15, 0, false, false));
+        }
+
+        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ModItems.CLOUD_BOOTS.get()) {
+            player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20*2, 1, false, false));
+            player.addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, 20*2, 0, false, false));
+        }
+
+        if (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.METEOR_HELMET.get()) {
+            player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20*2, 19, false, false));
+        }
+
+        if ((event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ModItems.SOUL_BOOTS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ModItems.SOUL_CHESTPLATE.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ModItems.SOUL_LEGGINGS.get()) && (event.getEntityLiving().getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ModItems.SOUL_HELMET.get())) {
+            player.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 20*2, 0, false, false));
+        }
+
+        if (player.getHeldItemOffhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()
+                || player.getHeldItemMainhand().getItem() == ModItems.TOTALLY_TUBULAR_GLOVE.get()) {
+            if (player.world.getDimensionKey().equals(Yeehaw.PILOT_RED_SUN)) {
+                ItemStack itemstack = player.getHeldItemOffhand();
+                int itemCount = itemstack.getCount();
+                player.addPotionEffect(new EffectInstance(Effects.SPEED, 2, (int)Math.floor((float)itemCount/2), false, false));
+            }
+        }
     }
+
+    @SubscribeEvent
+    public static void onAttackTommyTempus(AttackEntityEvent event) {
+        if (event.getTarget() instanceof LivingEntity) {
+            LivingEntity target = (LivingEntity) event.getTarget();
+
+            if (target instanceof NPCTommyTempusEntity) {
+                LivingEntity player = event.getEntityLiving();
+                if (player.getEntityWorld() instanceof ServerWorld) {
+                    ServerWorld serverWorld = (ServerWorld) player.getEntityWorld();
+                    Random rand = new Random();
+
+                    if (rand.nextInt(30) == 0) {
+                        for (int i = 1; i <= 4; i++) {
+                            EntityType.TNT.spawn(serverWorld, null, null, player.getPosition().add(0,2,0), SpawnReason.EVENT, false, true);
+                        }
+                    }
+                    if (rand.nextInt(30) == 0) {
+                        serverWorld.setBlockState(player.getPosition().add(0, 0, 0), Blocks.FIRE.getDefaultState());
+                    }
+                    if (rand.nextInt(30) == 0) {
+                        player.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 20*5, 0, false, true));
+                    }
+                    if (rand.nextInt(30) == 0) {
+                        player.addPotionEffect(new EffectInstance(Effects.POISON, 20*5, 1, false, true));
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:world_key_nowhere",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":2,"max":5}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:titanite",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":2,"max":5}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:etherium",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":2,"max":5}}]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_dissociation",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":3}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_immolation",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":3}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_decimation",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":3}}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "yeehaw:scroll_of_gods_grip",
+          "weight": 1,
+          "functions":[{"function":"set_count","count":{"min":3,"max":3}}]
+        }
+      ]
+    }
+  ]
+}

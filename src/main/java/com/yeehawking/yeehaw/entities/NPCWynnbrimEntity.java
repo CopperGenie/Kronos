@@ -16,6 +16,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.*;
@@ -141,7 +142,7 @@ public class NPCWynnbrimEntity extends AnimalEntity {
 
             // For testing
             if (playerIn.getHeldItemMainhand().getItem() == ModItems.TESTING_ROD_1.get()) {
-                this.setQuestNumber(12);
+                this.setQuestNumber(40);
                 taskMessage = TextFormatting.BLUE + "Quest number: " + this.getQuestNumber();
                 if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
 
@@ -411,6 +412,91 @@ public class NPCWynnbrimEntity extends AnimalEntity {
                         playerIn.addTag("Quest19");
                     }
                 }
+                else if (questNumber == 33) {
+                    if ( (playerIn.getHeldItemMainhand().getItem() == ModItems.UNDERSTONE.get()) && (itemstack.getCount() >= 3)) {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Ah, yes. I can feel the dark aura emanating from these stones. You shouldn't hold these for too long, you know."; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                        itemstack.shrink(3);
+                        playerIn.playSound(SoundEvents.ENTITY_ITEM_PICKUP, 0.8f, 1f);
+                        this.setQuestNumber(34);
+                    } else {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "The next ingredients required are 3 Understone from the malevolent Cursed Forest. Do not smelt them! We need the crystal structure to remain intact."; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    }
+                }
+                else if (questNumber == 34) {
+                    if ( (playerIn.getHeldItemMainhand().getItem() == Items.ENDER_EYE) && (itemstack.getCount() >= 6)) {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Oh my! They seem to stare right into your very soul, don't they?"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                        itemstack.shrink(6);
+                        playerIn.playSound(SoundEvents.ENTITY_ITEM_PICKUP, 0.8f, 1f);
+                        this.setQuestNumber(35);
+                    } else {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Finally! The last ingredient! You must procure 6 Eyes of Ender, then we will be ready for the final step."; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    }
+                }
+                else if (questNumber == 35) {
+                    taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Right then. Now that the potion is ready, we must craft the Roseum bottle. Bring me 1 Hexagonal Roseum and 64 Nether Quartz. We're going to use the old sandblasting technique."; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    this.setQuestNumber(36);
+                }
+                else if (questNumber == 36) {
+                    if (playerIn.getHeldItemMainhand().getItem() == ModItems.HEXAGONAL_ROSEUM.get()) {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Would you look at that beauty! Truly the embodiment of hexagonality! Now we just need 64 Nether Quartz to begin the sandblasting."; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                        itemstack.shrink(1);
+                        playerIn.playSound(SoundEvents.ENTITY_ITEM_PICKUP, 0.8f, 1f);
+                        this.setQuestNumber(37);
+                    } else {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Bring me the 1 Hexagonal Roseum first, if you please."; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    }
+                }
+                else if (questNumber == 37) {
+                    if (playerIn.getHeldItemMainhand().getItem() == Items.QUARTZ && itemstack.getCount() >= 64) {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "Right-o! Time to get down to business. You better put on some PPE. Safety is number one priority!"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                        itemstack.shrink(64);
+                        playerIn.playSound(SoundEvents.ENTITY_ITEM_PICKUP, 0.8f, 1f);
+                        this.setQuestNumber(38);
+                    } else {
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "We need 64 Nether Quartz to begin sandblasting this roseum!"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    }
+                }
+                else if (questNumber == 38) {
+                    taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "WOOOOOOOOOOOOOOOO!"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    for (int i = 1; i <= 150; i++) {
+                        this.world.addParticle(ParticleTypes.CRIT, this.getPosXRandom(1.5D), this.getPosYRandom(), this.getPosZRandom(1.5D), rand.nextDouble() - rand.nextDouble(), rand.nextDouble(), rand.nextDouble() - rand.nextDouble());
+                    }
+                    playerIn.playSound(SoundEvents.BLOCK_GRINDSTONE_USE, 1f, 1f);
+                    playerIn.playSound(SoundEvents.BLOCK_GRINDSTONE_USE, 1f, 0.7f);
+                    this.setQuestNumber(39);
+                }
+                else if (questNumber == 39) {
+                    taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "YEAH BABYYY!"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    for (int i = 1; i <= 150; i++) {
+                        this.world.addParticle(ParticleTypes.ANGRY_VILLAGER, this.getPosXRandom(1.5D), this.getPosYRandom(), this.getPosZRandom(1.5D), rand.nextDouble() - rand.nextDouble(), rand.nextDouble(), rand.nextDouble() - rand.nextDouble());
+                    }
+                    playerIn.playSound(SoundEvents.BLOCK_GRINDSTONE_USE, 1f, 1f);
+                    playerIn.playSound(SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, 1f, 0.7f);
+                    this.setQuestNumber(40);
+                }
+                else if (questNumber == 40) {
+                    taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "And voila, we have out bottle! Let me pour the potion and-"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                    for (int i = 1; i <= 15; i++) {
+                        this.world.addParticle(ParticleTypes.CRIT, this.getPosXRandom(1.5D), this.getPosYRandom(), this.getPosZRandom(1.5D), rand.nextDouble() - rand.nextDouble(), rand.nextDouble(), rand.nextDouble() - rand.nextDouble());
+                    }
+                    playerIn.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 0.8f, 1f);
+                    this.setQuestNumber(41);
+                }
+                else if (questNumber == 41) {
+                    if (playerIn.getEntityWorld() instanceof ServerWorld) {
+                        ServerWorld serverWorld = (ServerWorld) playerIn.getEntityWorld();
+                        ModEntityType.NPC_TIMEKEEPER.get().spawn(serverWorld, null, null, this.getPosition(), SpawnReason.EVENT, false, true);
+                    }
+                    playerIn.playSound(SoundInit.LICH_SUMMON.get(), 0.8f, 0.7f);
+                    this.setQuestNumber(42);
+                }
+                else if (questNumber == 42) {
+                    if (playerIn.getTags().contains("quest23")) {
+                        playerIn.removeTag("quest23");
+                        taskMessage = TextFormatting.YELLOW + "[Wynnbrim the Wise] " + TextFormatting.WHITE + "????"; if (!this.getEntityWorld().isRemote) { playerIn.sendMessage(new StringTextComponent(taskMessage), playerIn.getUniqueID()); }
+                        this.setQuestNumber(43);
+                    }
+                }
             }
         }
 
@@ -426,7 +512,6 @@ public class NPCWynnbrimEntity extends AnimalEntity {
     protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
         if (onGroundIn) { this.fallDistance = 0.0F; } else if (y < 0.0D) { this.fallDistance = 0.0F; }
     }
-
 }
 
 // No crime 8am to 5pm
